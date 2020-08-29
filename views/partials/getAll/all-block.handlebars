@@ -1,9 +1,9 @@
-<div class="card" id="{{id}}">
+<div class="card" id="{{dataValues.id}}">
     <div class="image">
-        <img src="{{imgFilepath}}">
+        <img src="{{dataValues.imgFilepath}}" onerror="this.src='images/placeholder.jpg';">
     </div>
     <div class="extra">
         Rating:
-        <div class="ui star rating" data-rating="{{userRating}}"></div>
+        <div class="ui star rating" data-rating="{{dataValues.userRating}}"></div>
     </div>
 </div>
